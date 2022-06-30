@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: aliceblue;
+	margin: 0;
+	padding: 0;
+}
+#container {
+	width: 330px;
+	height: 330px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lavender;
+	display: grid;
+	grid-template-areas: 
+		'topleft topright'
+		'bottomleft bottomright';
+	grid-template-columns: 150px 150px;
+	grid-template-rows: 150px 150px;
+	padding: 25px;
+	grid-gap: 25px;
+}
+#container > div {
+	padding: 5px;
+}
+#tl, #tr, #bl, #br {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#tl {
+	grid-area: topleft;
+	background-image: url("images/summer-shore.gif");
+}
+#tr {
+	grid-area: topright;
+	background-image: url("images/summer-puddle.gif");
+}
+#bl {
+	grid-area: bottomleft;
+	background-image: url("images/summer-drink.gif");
+}		
+#br {
+	grid-area: bottomright;
+	background-image: url("images/summer-beach.webp");
+}
+#lamp {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	height: 150px;
+	padding: 0 5px 5px 5px;
+	background-image: url("images/lamp.png");
+	background-size: contain;
+	background-repeat: none;
+}
